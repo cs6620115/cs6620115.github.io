@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#00cfff);
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background-color: #000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav .active a,
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  min-width: 120px;
+  text-align: left;
+}
+
+.submenu li a {
+  padding: 10px;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
