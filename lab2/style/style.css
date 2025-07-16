@@ -1,7 +1,18 @@
-td {
-    cursor: pointer;
+body{
+    background-color: gray;
 }
 
-tr:hover td {
-    background-color: aqua;
+div{
+    font-size: 36px;
+    text-align: center;
+    color: brown;
+}
+
+p{
+    text-align: center;
+    color: orange;
+}
+
+a{
+    color: red;
 }
