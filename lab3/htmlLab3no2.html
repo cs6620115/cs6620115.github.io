@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>แบบฟอร์มจองทัวร์</title>
+</head>
+<body>
+
+<h2>แบบฟอร์มจองทัวร์</h2>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+  <fieldset>
+    <legend>ข้อมูลทั่วไป</legend>
+    ชื่อ-สกุล: <input type="text" name="fullname" required>*<br><br>
+
+    Email: <input type="email" name="email" required>*<br><br>
+
+    โทรศัพท์: <input type="tel" name="phone" value="+66" required>*<br><br>
+
+    ที่อยู่: <br>
+    <textarea name="address" rows="4" cols="40"></textarea><br><br>
+
+    วัตถุประสงค์: <input type="text" name="purpose"><br><br>
+
+    รูปผู้จอง: 
+    <input type="file" name="photo" accept="image/*"><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>ข้อมูลเข้าสู่ระบบ</legend>
+
+    Username: <input type="text" name="username" minlength="8" required><br>
+    <small>ประกอบด้วยตัวเลข ตัวอักษร หรือ _ ตั้งแต่ 8 ตัวขึ้นไป</small><br><br>
+
+    Password: <input type="password" name="password" minlength="8" required><br>
+    <small>ประกอบด้วยอักขระอะไรก็ได้ ตั้งแต่ 8 ตัวขึ้นไป</small><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>ข้อมูลที่ต้องการ</legend>
+
+    แพคเกจทัวร์:
+    <select name="package" required>
+      <option value="">--select--</option>
+      <option value="chiangmai">เชียงใหม่</option>
+      <option value="phuket">ภูเก็ต</option>
+      <option value="bangkok">กรุงเทพ</option>
+    </select><br><br>
+
+    วันที่เดินทาง: <input type="date" name="travel_date" required><br><br>
+
+    จำนวนผู้เดินทาง:
+    <input type="number" name="num_people" min="1" max="10"><br><br>
+
+    แพคเกจทัวร์แบบไหนที่สนใจ?<br>
+    <input type="checkbox" name="interest" value="ชอปปิง"> ชอปปิง<br>
+    <input type="checkbox" name="interest" value="ธรรมชาติ"> ธรรมชาติ<br>
+    <input type="checkbox" name="interest" value="ทะเล"> ทะเล<br><br>
+  </fieldset>
+
+  ยอมรับเงื่อนไขและข้อตกลง:
+  <input type="radio" name="agreement" value="agree" required> I agree
+  <input type="radio" name="agreement" value="disagree"> I disagree<br><br>
+
+  <button type="submit">จอง</button>
+</form>
+
+</body>
+</html>

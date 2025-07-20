@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+	        input:invalid {
+	            border: red solid 4px;
+	        }
+	        input,
+	        input:valid {
+	            color:green;
+	    }
+	</style>
+    </head>
+    <body>
+        <form>
+            <p>11. รหัสผ่าน 5 อัขระเป็นต้นไป ที่ต้องประกอบด้วยอักขระตัวใหญ่ ตัวเล็กและตัวเลข อย่างน้อยชนิดละ 1 อักขระ</p>
+            <input type="password"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{5,}">
+
+            <p>12. บ้านเลขที่</p>
+            <input type="text"
+            pattern="\d+(\/\d+)?">
+
+            <p>13. รหัสสินค้า 3 ตัวแรกเป็นอักขระตัวใหญ่ตามด้วยตัวเลข 2 ตัวเท่านั้น</p>
+            <input type="text"
+            pattern="[A-Z]{3}\d{2}">
+
+            <p>14: กรอกชื่อ นามสกุล ด้วยภาษาไทยเท่านั้น</p>
+            <input type="text"
+            pattern="[ก-๙\s]+">
+        </form>
+    </body>
+</html>
